@@ -4,3 +4,9 @@
 <% @env.sort.each do |key, val| %>
 <%= key.to_s %>: <%= (val && val.to_s.inspect) %>
 <% end %>
+
+production:
+    foo: @@replacme@@
+    bar: @@barvalue@@
+
+development:
